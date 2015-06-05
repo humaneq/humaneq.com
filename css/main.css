@@ -167,7 +167,7 @@ nav a:hover {
 #business-card {
     transform: rotate(-3deg);
     backface-visibility: hidden;
-    margin: 50px 190px;
+    margin: 75px 190px 50px 190px;
     height: 300px;
 }
 
@@ -219,6 +219,10 @@ nav a:hover {
     height: 150px;
     font-family: 'Patua One', cursive;
     font-size: 26px;
+}
+
+#business-card #the-now-less-text a {
+    color: #000;
 }
 
 #business-card img#the-card {
