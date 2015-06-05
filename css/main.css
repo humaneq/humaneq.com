@@ -193,17 +193,17 @@ nav a:hover {
 }
 
 #business-card #the-new {
-    -webkit-animation-delay: 0.8s;
+    -webkit-animation-delay: 1s;
     display: inline-block;
     z-index: 1;
     position: absolute;
-    margin-left: 80px;
+    margin-left: 135px;
     margin-top: 20px;
     transition: 0.2s ease-in-out;
 }
 
 #business-card:hover #the-new {
-    transform: translate(175px,0);
+    transform: translate(165px,0);
     transition: 0.2s ease-in-out;
 }
 
@@ -213,13 +213,21 @@ nav a:hover {
 
 #business-card #the-now-less-text {
     text-align: center;
-    width: 150px;
-    padding: 0 70px;
+    width: 175px;
+    padding: 0 55px 0 20px;
     margin: 0;
     height: 150px;
     font-family: 'Patua One', cursive;
     font-size: 26px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
+
+#business-card:hover #the-now-less-text {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
 
 #business-card #the-now-less-text a {
     color: #000;
