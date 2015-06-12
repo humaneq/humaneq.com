@@ -57,7 +57,8 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px Helvetica, Helvetica Neue, Arial;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
 }
 
 .wrapper {
@@ -242,30 +243,50 @@ nav a:hover {
     display: none;
 }
 
-#harri-kauhanen {
+#humaneq-is span {
+    position: relative;
+}
+
+#humaneq-is #harri-kauhanen {
     font-family: 'Engagement', cursive;
     font-weight: 400;
     font-size: 90px;
 }
 
-#full-stack-web-developer {
+#humaneq-is #full-stack-web-developer {
     font-family: 'Patua One', cursive;
     font-size: 60px;
 }
 
-#freelancer {
+#humaneq-is #freelancer {
     font-family: 'Codystar', cursive;
     font-size: 90px;
 }
 
-#wellbeing {
+#humaneq-is #wellbeing {
     font-family: 'Great Vibes', cursive;
     font-size: 120px;
 }
 
-#people {
+#humaneq-is #people {
     font-family: 'Monofett', cursive;
     font-size: 75px;
+}
+
+#humaneq-is video {
+    margin-top: -110px;
+}
+
+#more-about-harri {
+    margin: 50px 0;
+}
+
+#site-powered-by {
+
+}
+
+#site-not-powered-by {
+    font-size: 10px;
 }
 
 
