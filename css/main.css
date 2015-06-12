@@ -58,7 +58,7 @@ textarea {
 
 body {
     font-family: 'Special Elite', cursive;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .wrapper {
@@ -168,7 +168,7 @@ nav a:hover {
 #business-card {
     transform: rotate(-3deg);
     backface-visibility: hidden;
-    margin: 75px 190px 50px 190px;
+    margin: 75px 190px 75px 190px;
     height: 300px;
 }
 
@@ -245,12 +245,13 @@ nav a:hover {
 
 #humaneq-is span {
     position: relative;
+    margin: 10px 0;
 }
 
 #humaneq-is #harri-kauhanen {
     font-family: 'Engagement', cursive;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 110px;
 }
 
 #humaneq-is #full-stack-web-developer {
@@ -260,21 +261,29 @@ nav a:hover {
 
 #humaneq-is #freelancer {
     font-family: 'Codystar', cursive;
-    font-size: 90px;
+    font-size: 70px;
+    letter-spacing: 20px;
+    margin: 15px 0 20px 0;
 }
 
 #humaneq-is #wellbeing {
     font-family: 'Great Vibes', cursive;
-    font-size: 120px;
+    font-size: 160px;
+    margin: -20px 0 -40px 0;
 }
 
 #humaneq-is #people {
     font-family: 'Monofett', cursive;
-    font-size: 75px;
+    font-size: 90px;
+    margin-bottom: 30px;
 }
 
 #humaneq-is video {
-    margin-top: -110px;
+    margin-top: -100px;
+}
+
+.separator {
+    margin: 50px 0;
 }
 
 #more-about-harri {
@@ -287,8 +296,12 @@ nav a:hover {
 
 #site-not-powered-by {
     font-size: 10px;
+    margin-top: 50px;
 }
 
+#cookie-policy {
+    margin-top: 50px;
+}
 
 .container {
   margin-top: 100px;
