@@ -450,6 +450,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 848px) {
+    body {
+        font-size: 19px;
+    }
+
     #business-card-wrapper {
         transform:scale(0.8);
         max-width: 100%;
@@ -486,6 +490,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 519px) {
+    body {
+        font-size: 17px;
+    }
+
     #business-card-wrapper {
         transform:scale(0.5);
         margin: 0;
@@ -493,6 +501,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 319px) {
+    body {
+        font-size: 14px;
+    }
+
     #business-card-wrapper {
         transform:scale(0.3);
     }
