@@ -308,6 +308,7 @@ nav a:hover {
 
 .separator {
     margin: 50px 0;
+    white-space: nowrap;
 }
 
 #more-about-harri {
