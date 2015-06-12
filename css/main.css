@@ -165,46 +165,64 @@ nav a:hover {
     margin: 10px 0;
 }
 
-#business-card {
+#business-card-wrapper {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
     transform: rotate(-3deg);
+
     backface-visibility: hidden;
     margin: 75px 190px 75px 190px;
     height: 300px;
+    border: 1px solid transparent;
 }
 
 #business-card img#the-card {
     position: absolute;
     z-index: 2;
     margin-left: -300px;
+    border: 2px solid white;
+    transform: translateZ(1px); /* translateZ partially fixes jagged border on Firefox, see http://stackoverflow.com/a/20957574 */
 }
 
 
 #business-card img#the-less-fat {
     position: absolute;
     z-index: 3;
-    margin-left: 115px;
-    margin-top: 25px;
+    margin-left: 117px;
+    margin-top: 27px;
     opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 }
 
 #business-card:hover img#the-less-fat {
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     opacity: 1;
 }
 
 #business-card #the-new {
     -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
     display: inline-block;
     z-index: 1;
     position: absolute;
     margin-left: 135px;
     margin-top: 20px;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
 #business-card:hover #the-new {
+    -webkit-transform: translate(165px,0);
+    -moz-transform: translate(165px,0);
     transform: translate(165px,0);
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -235,7 +253,7 @@ nav a:hover {
 }
 
 #business-card img#the-card {
-    box-shadow: 5px 5px 25px #666;
+    box-shadow: 3px 3px 15px rgba(100,100,100,0.75);
     border-radius: 40px;
 }
 
