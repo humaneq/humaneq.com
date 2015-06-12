@@ -373,6 +373,8 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
+
+
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
@@ -446,6 +448,56 @@ nav a:hover {
         width: 28%;
     }
 }
+
+@media only screen and (max-width: 848px) {
+    #business-card-wrapper {
+        transform:scale(0.8);
+        max-width: 100%;
+    }
+
+    #business-card #the-new {
+        display: none;
+    }
+
+    #humaneq-is #harri-kauhanen {
+        font-size: 11vw;
+    }
+
+    #humaneq-is #full-stack-web-developer {
+        font-size: 6vw;
+    }
+
+    #humaneq-is #freelancer {
+        font-size: 7.5vw;
+    }
+
+    #humaneq-is #wellbeing {
+        font-size: 19vw;
+    }
+
+    #humaneq-is #people {
+        font-size: 9vw;
+    }
+
+    #dogs-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    #business-card-wrapper {
+        transform:scale(0.5);
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    #business-card-wrapper {
+        transform:scale(0.3);
+    }
+}
+
 
 @media only screen and (min-width: 1140px) {
 
