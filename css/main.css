@@ -171,7 +171,7 @@ nav a:hover {
     transform: rotate(-3deg);
 
     backface-visibility: hidden;
-    margin: 75px 190px 75px 190px;
+    margin: 50px 190px 75px 190px;
     height: 300px;
     border: 1px solid transparent;
 }
@@ -270,32 +270,32 @@ nav a:hover {
     font-family: 'Engagement', cursive;
     font-weight: 400;
     font-size: 110px;
-    margin: -10px 0 -5px 0;
+    margin: -0.15em 0 -0.1em 0;
 }
 
 #humaneq-is #full-stack-web-developer {
     font-family: 'Patua One', cursive;
     font-size: 60px;
-    margin: 15px 0 25px 0;
+    margin: 0.1em 0 0.4em 0;
 }
 
 #humaneq-is #freelancer {
     font-family: 'Codystar', cursive;
     font-size: 75px;
     letter-spacing: 20px;
-    margin: 15px 0 25px 0;
+    margin: 0.2em 0 0.35em 0;
 }
 
 #humaneq-is #wellbeing {
     font-family: 'Great Vibes', cursive;
     font-size: 190px;
-    margin: -20px 0 -55px 0;
+    margin: -0.15em 0 -0.3em 0;
 }
 
 #humaneq-is #people {
     font-family: 'Monofett', cursive;
     font-size: 90px;
-    margin: -10px 0 20px 0;
+    margin: -0.1em 0 0.2em 0;
 }
 
 #humaneq-is #dogs-end-of-sentence {
@@ -303,7 +303,7 @@ nav a:hover {
 }
 
 #humaneq-is video {
-    margin-top: -100px;
+    margin-top: -4em;
 }
 
 .separator {
@@ -450,6 +450,12 @@ nav a:hover {
     }
 }
 
+@media only screen and (max-width: 1023px) {
+    #business-card #the-new {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 848px) {
     body {
         font-size: 19px;
@@ -458,10 +464,7 @@ nav a:hover {
     #business-card-wrapper {
         transform:scale(0.8);
         max-width: 100%;
-    }
-
-    #business-card #the-new {
-        display: none;
+        margin: 0 0 30px 0;
     }
 
     #humaneq-is #harri-kauhanen {
@@ -474,6 +477,7 @@ nav a:hover {
 
     #humaneq-is #freelancer {
         font-size: 7.5vw;
+        letter-spacing: 15px;
     }
 
     #humaneq-is #wellbeing {
@@ -487,6 +491,7 @@ nav a:hover {
     #dogs-video {
         width: 100%;
         height: auto;
+        font-size: 2vw;
     }
 }
 
@@ -497,7 +502,11 @@ nav a:hover {
 
     #business-card-wrapper {
         transform:scale(0.5);
-        margin: 0;
+        margin: -60px 0 -50px 0;
+    }
+
+     #humaneq-is #freelancer {
+        letter-spacing: 15px;
     }
 }
 
@@ -508,6 +517,11 @@ nav a:hover {
 
     #business-card-wrapper {
         transform:scale(0.3);
+        margin: -105px 0 -90px 0;
+    }
+    
+    #humaneq-is #freelancer {
+        letter-spacing: 8px;
     }
 }
 
