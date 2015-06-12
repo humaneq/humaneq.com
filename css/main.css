@@ -270,30 +270,32 @@ nav a:hover {
     font-family: 'Engagement', cursive;
     font-weight: 400;
     font-size: 110px;
+    margin: -10px 0 -5px 0;
 }
 
 #humaneq-is #full-stack-web-developer {
     font-family: 'Patua One', cursive;
     font-size: 60px;
+    margin: 15px 0 25px 0;
 }
 
 #humaneq-is #freelancer {
     font-family: 'Codystar', cursive;
-    font-size: 70px;
+    font-size: 75px;
     letter-spacing: 20px;
-    margin: 15px 0 20px 0;
+    margin: 15px 0 25px 0;
 }
 
 #humaneq-is #wellbeing {
     font-family: 'Great Vibes', cursive;
-    font-size: 160px;
-    margin: -20px 0 -40px 0;
+    font-size: 190px;
+    margin: -20px 0 -55px 0;
 }
 
 #humaneq-is #people {
     font-family: 'Monofett', cursive;
     font-size: 90px;
-    margin-bottom: 30px;
+    margin: -10px 0 20px 0;
 }
 
 #humaneq-is #dogs-end-of-sentence {
