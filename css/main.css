@@ -278,6 +278,10 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+#humaneq-is #dogs-end-of-sentence {
+    display: none;
+}
+
 #humaneq-is video {
     margin-top: -100px;
 }
