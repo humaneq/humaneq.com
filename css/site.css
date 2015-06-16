@@ -1,0 +1,535 @@
+/*** uncss> filename: css/normalize.min.css ***/
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*** uncss> filename: css/animate.css ***/
+
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*** uncss> filename: css/main.css ***/
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img,
+video {
+  vertical-align: middle;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+  font-family: 'Special Elite', cursive;
+  font-size: 22px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main {
+  padding: 30px 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.main p span {
+  display: block;
+  margin: 10px 0;
+}
+
+#business-card-wrapper {
+  left: 50%;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  backface-visibility: hidden;
+  margin: 50px auto 75px auto;
+  height: 300px;
+  border: 1px solid transparent;
+  position: absolute;
+}
+
+#business-card {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#business-card img#the-card {
+  position: absolute;
+  z-index: 2;
+  left: -300px;
+  border: 2px solid white;
+  transform: translateZ(1px); /* translateZ partially fixes jagged border on Firefox, see http://stackoverflow.com/a/20957574 */
+}
+
+#business-card img#the-less-fat {
+  position: absolute;
+  z-index: 3;
+  left: 117px;
+  margin-top: 27px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#business-card:hover img#the-less-fat {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#business-card #the-new {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  left: 132px;
+  margin-top: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#business-card:hover #the-new {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  left: 295px;
+}
+
+#business-card #the-now-less-text {
+  text-align: center;
+  width: 175px;
+  padding: 0 55px 0 20px;
+  margin: 0;
+  height: 150px;
+  font-family: 'Patua One', cursive;
+  font-size: 26px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#business-card:hover #the-now-less-text {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#business-card #the-now-less-text a {
+  color: #000;
+}
+
+#business-card img#the-card {
+  box-shadow: 3px 3px 15px rgba(100,100,100,0.75);
+  border-radius: 40px;
+}
+
+#humaneq-oy {
+  display: none;
+}
+
+#humaneq-is {
+  margin-top: 410px;
+}
+
+#humaneq-is span {
+  position: relative;
+  margin: 10px 0;
+}
+
+#humaneq-is #harri-kauhanen {
+  font-family: 'Engagement', cursive;
+  font-weight: 400;
+  font-size: 110px;
+  margin: -0.15em 0 -0.1em 0;
+}
+
+#humaneq-is #full-stack-web-developer {
+  font-family: 'Patua One', cursive;
+  font-size: 60px;
+  margin: 0.1em 0 0.4em 0;
+}
+
+#humaneq-is #freelancer {
+  font-family: 'Codystar', cursive;
+  font-size: 75px;
+  letter-spacing: 20px;
+  margin: 0.2em 0 0.35em 0;
+}
+
+#humaneq-is #wellbeing {
+  font-family: 'Great Vibes', cursive;
+  font-size: 190px;
+  margin: -0.15em 0 -0.3em 0;
+}
+
+#humaneq-is #people {
+  font-family: 'Monofett', cursive;
+  font-size: 90px;
+  margin: -0.1em 0 0.2em 0;
+}
+
+#humaneq-is #dogs-end-of-sentence {
+  display: none;
+}
+
+#humaneq-is video {
+  margin-top: -4em;
+}
+
+.separator {
+  margin: 2em 0;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#more-about-harri {
+  margin: 2em 0;
+}
+
+
+
+#site-not-powered-by {
+  font-size: 10px;
+  margin-top: 4em;
+}
+
+#cookie-policy {
+  margin-top: 2em;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1023px) {
+  #business-card #the-new {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 848px) {
+  body {
+    font-size: 19px;
+  }
+
+  #business-card-wrapper {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    max-width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  #humaneq-is {
+    margin-top: 325px;
+  }
+
+  #humaneq-is #harri-kauhanen {
+    font-size: 11vw;
+  }
+
+  #humaneq-is #full-stack-web-developer {
+    font-size: 6vw;
+  }
+
+  #humaneq-is #freelancer {
+    font-size: 7.5vw;
+    letter-spacing: 15px;
+  }
+
+  #humaneq-is #wellbeing {
+    font-size: 19vw;
+  }
+
+  #humaneq-is #people {
+    font-size: 9vw;
+  }
+
+  #dogs-video {
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  body {
+    font-size: 17px;
+  }
+
+  #business-card-wrapper {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    margin: -60px 0 -50px 0;
+  }
+
+  #humaneq-is {
+    margin-top: 205px;
+  }
+
+  #humaneq-is #freelancer {
+    letter-spacing: 15px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  body {
+    font-size: 14px;
+  }
+
+  #business-card-wrapper {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    margin: -105px 0 -90px 0;
+  }
+
+  #humaneq-is {
+    margin-top: 115px;
+  }
+
+  #humaneq-is #freelancer {
+    letter-spacing: 8px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  /* ===============
+    Maximal Width
+   =============== */
+
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}
