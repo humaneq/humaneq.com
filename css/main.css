@@ -166,20 +166,23 @@ nav a:hover {
 }
 
 #business-card-wrapper {
+    left: 50%;
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     transform: rotate(-3deg);
 
     backface-visibility: hidden;
-    margin: 50px 190px 75px 190px;
+    margin: 50px auto 75px auto;
     height: 300px;
     border: 1px solid transparent;
+    position: absolute;
 }
 
 #business-card img#the-card {
     position: absolute;
     z-index: 2;
-    margin-left: -300px;
+    left: -300px;
+    /* margin-left: -300px; */
     border: 2px solid white;
     transform: translateZ(1px); /* translateZ partially fixes jagged border on Firefox, see http://stackoverflow.com/a/20957574 */
 }
@@ -188,7 +191,7 @@ nav a:hover {
 #business-card img#the-less-fat {
     position: absolute;
     z-index: 3;
-    margin-left: 117px;
+    left: 117px;
     margin-top: 27px;
     opacity: 0;
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -210,7 +213,7 @@ nav a:hover {
     display: inline-block;
     z-index: 1;
     position: absolute;
-    margin-left: 135px;
+    left: 132px;
     margin-top: 20px;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
@@ -259,6 +262,10 @@ nav a:hover {
 
 #humaneq-oy {
     display: none;
+}
+
+#humaneq-is {
+    margin-top: 410px;
 }
 
 #humaneq-is span {
@@ -471,6 +478,10 @@ nav a:hover {
         margin: 0 0 30px 0;
     }
 
+    #humaneq-is {
+        margin-top: 325px;
+    }
+
     #humaneq-is #harri-kauhanen {
         font-size: 11vw;
     }
@@ -511,6 +522,11 @@ nav a:hover {
         margin: -60px 0 -50px 0;
     }
 
+    #humaneq-is {
+        margin-top: 205px;
+    }
+
+
      #humaneq-is #freelancer {
         letter-spacing: 15px;
     }
@@ -527,6 +543,11 @@ nav a:hover {
         transform:scale(0.3);
         margin: -105px 0 -90px 0;
     }
+
+    #humaneq-is {
+        margin-top: 115px;
+    }
+
 
     #humaneq-is #freelancer {
         letter-spacing: 8px;
