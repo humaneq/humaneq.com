@@ -345,6 +345,10 @@ body {
   margin-top: -5em;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 .separator {
   margin: 1.75em 0;
   white-space: nowrap;
