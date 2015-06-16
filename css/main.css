@@ -178,6 +178,16 @@ nav a:hover {
     position: absolute;
 }
 
+#business-card {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
 #business-card img#the-card {
     position: absolute;
     z-index: 2;
@@ -218,6 +228,12 @@ nav a:hover {
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 #business-card:hover #the-new {
