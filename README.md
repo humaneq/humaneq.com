@@ -1,6 +1,3 @@
-Homapage of Humaneq
-===================
-
 This repository contains the "source code" for our homepage at [http://humaneq.com](http://humaneq.com).
 
 Key ingredients:
