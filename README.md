@@ -7,7 +7,7 @@ Key ingredients:
   * [Animate.css](http://daneden.github.io/animate.css/)
   * [Google Fonts](https://www.google.com/fonts)
   * [Shutterstock](http://www.shutterstock.com/)
-  * [Pixelmator](pixelmator)
+  * [Pixelmator](http://www.pixelmator.com/mac/)
   * [Nu Html Checker](https://validator.w3.org/nu/)
   * [UnCSS](https://github.com/giakki/uncss)
   * [Sublime Text](http://www.sublimetext.com/)
