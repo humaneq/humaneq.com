@@ -237,12 +237,10 @@ nav a:hover {
 }
 
 #business-card:hover #the-new {
-    -webkit-transform: translate(165px,0);
-    -moz-transform: translate(165px,0);
-    transform: translate(165px,0);
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+    left: 295px;
 }
 
 #business-card img#the-new-tag {
