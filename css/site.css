@@ -484,8 +484,6 @@ body {
   *:after {
     background: transparent !important;
     color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
   }
 
   a,
@@ -508,5 +506,21 @@ body {
   p {
     orphans: 3;
     widows: 3;
+  }
+
+  #business-card-wrapper {
+    width: 100%;
+  } 
+
+  #the-new {
+    opacity: 0;
+  }
+
+  #humaneq-is {
+    padding-top: 25px;
+  }
+
+  #dogs-video img {
+    display: block;
   }
 }
