@@ -15,6 +15,7 @@ body {
 video {
   display: inline-block;
   vertical-align: baseline;
+  -webkit-filter:brightness(108.5%); /* Chrome 19+ & Safari 6+ */
 }
 
 a {
@@ -335,6 +336,7 @@ body {
   font-family: 'Monofett', cursive;
   font-size: 90px;
   margin: -0.1em 0 0.2em 0;
+  z-index: 10;
 }
 
 #humaneq-is #dogs-end-of-sentence {
